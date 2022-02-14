@@ -108,7 +108,7 @@
     border-radius: 6px;
     letter-spacing: 0.03em;
 
-    &--header {
+    &--list {
         @extend %opensans-600;
         width: 240px;
         background-color: $white;
@@ -119,8 +119,8 @@
         transition: background-color 0.3s, border-radius 0.3s, color 0.3s, box-shadow 0.3s;
     }
 
-    &--header::after,
-    &--header::before {
+    &--list::after,
+    &--list::before {
         content: '';
         position: absolute;
         background-repeat: no-repeat;
@@ -128,7 +128,7 @@
         background-size: cover;
     }
 
-    &--header::before {
+    &--list::before {
         background-image: url('../images/icon/nav.svg');
         width: 25px;
         height: 17px;
@@ -136,7 +136,7 @@
         left: 17px;
     }
 
-    &--header::after {
+    &--list::after {
         background-image: url('../images/icon/chevron.svg');
         width: 10px;
         height: 5px;
@@ -145,20 +145,20 @@
         transition: background-image 0.3s, transform 0.3s;
     }
 
-    &--header:hover {
+    &--list:hover {
         background-color: $green-200;
         border-radius: 6px 6px 0 0;
     }
 
-    &--header:hover::after {
+    &--list:hover::after {
         transform: rotateX(180deg);
     }
 
-    &--header:focus {
+    &--list:focus {
         box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5);
     }
 
-    &--header:active {
+    &--list:active {
         color: rgba(99, 166, 14, 0.5);
     }
 
