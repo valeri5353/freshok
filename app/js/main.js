@@ -1,5 +1,5 @@
 $(function () {
-    $('.slider__inner').slick({
+    $('.banners-slider__inner').slick({
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
         fade: true,
@@ -8,10 +8,10 @@ $(function () {
         // autoplaySpeed: 4000
     });
 
-    $('.product').hover( function () {
-        $(this).toggleClass('product--active');
-        $(this).find('.product__img').toggleClass('product__img--active');  
+    $('.product-card').hover( function () {
+        $(this).toggleClass('product-card--active');
+        $(this).find('.product-card__link').toggleClass('product-card__link--active');  
     });
 
-    let Mixer = mixitup('.top-products__inner');
+    let Mixer = mixitup('.top-products__list');
 });
